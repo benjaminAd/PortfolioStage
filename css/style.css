@@ -3,6 +3,7 @@ body{
     padding: 0;
 }
 #navbar{
+    padding-top: 1%;
     height: 8vh;
     background-color: aqua;
 }
@@ -18,11 +19,19 @@ body{
     margin: 0;
     padding: 0;
     display: inline-grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
 
-#navlist li:hover{
-    background-color: blue;
+#navlist li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlinks{
+    text-decoration: none;
+    color: black;
 }
