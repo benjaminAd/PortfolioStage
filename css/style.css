@@ -1,0 +1,15 @@
+#logo{
+    border-radius: 50%;
+    width: 5%;
+}
+
+
+li{
+    display: inline;
+}
+
+#navlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
