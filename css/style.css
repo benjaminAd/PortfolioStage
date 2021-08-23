@@ -12,6 +12,9 @@ body{
     margin-left: 15%;
     border-radius: 50%;
     width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #navlist{
@@ -34,4 +37,9 @@ body{
 .navlinks{
     text-decoration: none;
     color: black;
+}
+
+.navlinks:hover{
+    text-decoration: underline;
+    font-weight: bolder;
 }
