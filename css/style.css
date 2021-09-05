@@ -3,12 +3,15 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 nav{
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 1000;
     padding: 0 5% 0 5%;
+    background-color: black;
 }
 
 #navlist{
@@ -29,7 +32,10 @@ nav{
 }
 
 #logo{
-    height: 80%;
+    height: 70%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
 }
 .title{
     height: 100%;
@@ -37,5 +43,20 @@ nav{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.presentation{
+    height: 100vh;
+    background-color: aqua;
+}
+
+.competences{
+    height: 100vh;
+    background-color: red;
+}
+
+.projets{
+    height: 100vh;
+    background-color: green;
 }
 
