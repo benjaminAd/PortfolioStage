@@ -28,7 +28,7 @@ nav {
     list-style-type: none;
 }
 
-.navlinks a:hover {
+.navlinks:hover {
     transition: font-size 0.2s ease;
     text-decoration: underline;
     font-size: 1.2em;
@@ -54,21 +54,26 @@ nav {
     justify-content: flex-start;
 }
 
-.presentation {
+#presentation {
     height: 100vh;
+    padding-top: 10vh;
     background-color: aqua;
 }
 
-.competences {
+#competences {
     height: 90vh;
     background-color: red;
 }
 
-.projets {
+#projets {
     height: 90vh;
     background-color: green;
 }
 
+#exppro{
+    height: 90vh;
+    background-color: blueviolet;
+}
 /*@media screen and (max-width: 800px) {
     .toggle{
         display: block;
