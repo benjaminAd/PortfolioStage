@@ -62,7 +62,15 @@ nav {
 #presentation {
     height: 100vh;
     padding-top: 10vh;
-    background-color: aqua;
+    background-color: black;
+}
+
+#presentation p{
+    width: 50%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
 }
 
 #presentation_img{
