@@ -6,6 +6,10 @@
     color: white;
 }
 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -44,16 +48,11 @@ nav {
     display: none;
 }
 
-#logo {
-    height: 70%;
-    background-color: white;
-    border-radius: 50%;
-    padding: 2px;
-}
-
 .title {
     height: 100%;
     width: 40%;
+    font-size: 2.5rem;
+    font-weight: bolder;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -62,7 +61,7 @@ nav {
 #presentation {
     height: 100vh;
     padding-top: 10vh;
-    background-color: black;
+    background-color: #110F0F;
     display: flex;
     flex-wrap: wrap;
 }
@@ -70,7 +69,7 @@ nav {
 #img_div{
     display: flex;
     height: 90vh;
-    width: 60%;
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
@@ -79,13 +78,18 @@ nav {
     height: 40vh;
 }
 
+.under_text{
+    margin-top: 2%;
+}
+
 #pres_text_div{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-left: 5%;
+    padding-right: 5%;
 }
 
 #pres_text_div p{
@@ -100,9 +104,18 @@ nav {
     border: 1px solid white;
     padding: 2%;
     background-color: white;
-    color: black;
+    color: #110F0F;
     font-weight: bold;
     border-radius: 50px;
+}
+#redirect_text{
+    width: 100%;
+    text-align: center;
+}
+
+#ddl_text{
+    text-decoration: underline;
+    color: blue;
 }
 
 #competences {
