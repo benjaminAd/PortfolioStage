@@ -32,10 +32,14 @@ nav {
     list-style-type: none;
 }
 
+.navlinks{
+    font-size: 1.5rem;
+}
+
 .navlinks:hover {
     transition: font-size 0.2s ease;
     text-decoration: underline;
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-weight: bold;
 }
 
@@ -50,7 +54,7 @@ nav {
 
 .title {
     height: 100%;
-    width: 40%;
+    flex: 0.6;
     font-size: 2.5rem;
     font-weight: bolder;
     display: flex;
@@ -68,23 +72,24 @@ nav {
 
 #img_div{
     display: flex;
-    height: 90vh;
-    width: 50%;
+    height: 90vh; 
+    flex: 0.75;
     justify-content: center;
     align-items: center;
 }
 
 #img_div img{
-    height: 70vh;
+    width: 70%;
 }
+
 
 .under_text{
     margin-top: 2%;
 }
 
 #pres_text_div{
-    width: 50%;
     display: flex;
+    flex: 0.5;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -132,9 +137,78 @@ nav {
     height: 90vh;
     background-color: blueviolet;
 }
-@media screen and (max-width: 768px) {
+
+@media (max-width: 1100px) {
+    .visiblemenu_active{
+        width: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-bottom:1px solid white ;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .visiblemenu_hidden{
+        visibility:hidden;
+    }
+
+    .navlinks{
+        font-size: 1.5rem;
+    }
+
+    .toggle button{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+
+    #navlist{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .hamburger_title_div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .title{
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
     .toggle{
         display: block;
+    }
+
+    #presentation{
+        flex-direction: column-reverse;
+    }
+
+    #img_div{
+        flex: 0.5;
+    }
+
+    #img_div img{
+        height: 60%;
+    }
+
+    #pres_text_div{
+        flex: 0.5;
+        margin-bottom: 10%;
     }
     /*.visiblemenu{
         display: none;
@@ -147,4 +221,3 @@ nav {
         flex-direction: column;
     }*/
 }
-
