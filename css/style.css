@@ -125,17 +125,28 @@ nav {
 
 #competences {
     height: 90vh;
-    background-color: red;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#competences_glass{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.6;
+    border-radius: 50px;
+    filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 #projets {
     height: 90vh;
-    background-color: green;
 }
 
 #exppro{
     height: 90vh;
-    background-color: blueviolet;
 }
 
 @media (max-width: 1100px) {
