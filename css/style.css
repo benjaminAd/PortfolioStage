@@ -114,7 +114,7 @@ nav {
 }
 
 #competences {
-    height: 90vh;
+    min-height: 90vh;
     background-color: black;
     display: flex;
     align-items: center;
@@ -123,7 +123,7 @@ nav {
 
 #competences_glass{
     width: 90%;
-    height: 90%;
+    min-height: 80vh;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     padding: 2%;
@@ -160,12 +160,27 @@ nav {
     border-radius: 50%;
 }
 
+.half_dot{
+    background: linear-gradient(90deg,#576BB1 50%,white 50%);
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
 #projets {
     height: 90vh;
 }
 
 #exppro{
     height: 90vh;
+}
+
+@media (max-width:1410px){
+   
+    .competence_text{
+        width: 20%;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -227,7 +242,26 @@ nav {
         margin-top: 1.5rem;
     }
 
-   
+    #competences_glass{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .competence_text{
+        width: 30%;
+        margin: 0 1rem;
+    }
+
+    .competence{
+        width: 55%;
+    }
+
+    .dot,.empty_dot,.half_dot{
+        width: 2rem;
+        height: 2rem;
+    }
+
 }
 
 @media (max-width:800px){
@@ -237,5 +271,14 @@ nav {
 
     #presentation{
         flex-direction: column-reverse;
+    }
+
+    .dot,.empty_dot,.half_dot{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .competence_text{
+        font-size: 1.5rem;
     }
 }
