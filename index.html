@@ -1,118 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" href="./medias/28emote1.png"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="./medias/28emote1.png" />
     <title>Mon CV</title>
-</head>
-<body>
-<nav>
-    <ul id="navlist">
+  </head>
+  <body>
+    <nav>
+      <ul id="navlist">
         <div class="hamburger_title_div">
-            <li class="title">Benjamin ADOLPHE</li>
-            <li class="toggle"><button>@</button></li>
+          <li class="title">Benjamin ADOLPHE</li>
+          <li class="toggle"><button>@</button></li>
         </div>
-        <li class="visiblemenu visiblemenu_hidden"><a class="navlinks" data-link="presentation" href="#">Présentation</a></li>
-        <li class="visiblemenu visiblemenu_hidden"><a class="navlinks" data-link="competences" href="#">Compétences</a></li>
-        <li class="visiblemenu visiblemenu_hidden"><a class="navlinks" data-link="exppro" href="#">Expériences</a></li>
-        <li class="visiblemenu visiblemenu_hidden"><a class="navlinks" data-link="projets" href="#">Projets</a></li>
-    </ul>
-</nav>
-<div id="presentation">
-    <div id="pres_text_div">
-        <p id="text_pres_cursus">Je suis actuellement en <var>2 <sup>ème</sup></var> année de Master Génie Logiciel à l'Université de Montpellier.</p> <br> 
-        <p class="under_text">Je suis né sur l'île de La Réunion et j'ai décidé d'emménager à Montpellier, après avoir validé ma licence, afin d'améliorer mes compétences et connaissances dans le domaine du Génie Logiciel.</p> <br>
-        <p class="under_text" id="redirect_text"> <a id="cv_redirect_link" href="https://benjaminadolphe.notion.site/Benjamin-ADOLPHE-a5456514939e4d0985b2afe2aedc3fc2" target="_blank">consultez mon cv</a> <span id="pres_text_ddl">ou téléchargez le <a href="https://www.dropbox.com/s/8wsiyscjjqatn3v/Benjamin_Adolphe_Resume.pdf?dl=1" target="_blank" download="Benjamin_Adolphe_resume.pdf" id="ddl_text">ici</a>.</span></p>
+        <li class="visiblemenu visiblemenu_hidden">
+          <a class="navlinks" data-link="presentation" href="#">Présentation</a>
+        </li>
+        <li class="visiblemenu visiblemenu_hidden">
+          <a class="navlinks" data-link="competences" href="#">Compétences</a>
+        </li>
+        <li class="visiblemenu visiblemenu_hidden">
+          <a class="navlinks" data-link="projets" href="#">Projets</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="presentation">
+      <div id="pres_text_div">
+        <p id="text_pres_cursus">
+          Je suis actuellement en <var>2 <sup>ème</sup></var> année de Master
+          Génie Logiciel à l'Université de Montpellier.
+        </p>
+        <br />
+        <p class="under_text">
+          Je suis né sur l'île de La Réunion et j'ai décidé d'emménager à
+          Montpellier, après avoir validé ma licence, afin d'améliorer mes
+          compétences et connaissances dans le domaine du Génie Logiciel.
+        </p>
+        <br />
+        <p class="under_text" id="redirect_text">
+          <a
+            id="cv_redirect_link"
+            href="https://benjaminadolphe.notion.site/Benjamin-ADOLPHE-a5456514939e4d0985b2afe2aedc3fc2"
+            target="_blank"
+            >consultez mon cv</a
+          >
+          <span id="pres_text_ddl"
+            >ou téléchargez le
+            <a
+              href="https://www.dropbox.com/s/8wsiyscjjqatn3v/Benjamin_Adolphe_Resume.pdf?dl=1"
+              target="_blank"
+              download="Benjamin_Adolphe_resume.pdf"
+              id="ddl_text"
+              >ici</a
+            >.</span
+          >
+        </p>
+      </div>
+      <img src="./medias/logo.svg" id="presentation_img" />
     </div>
-        <img src="./medias/logo.svg" id="presentation_img"/>
-</div>
-<div id="competences">
-    <div id="competences_glass"> 
-            <div class="competence">
-                <span class="competence_text">Angular</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="empty_dot"></span>
-                <span class="empty_dot"></span>
-            </div>
+    <div id="competences">
+      <div class="glass">
+        <div class="competence">
+          <span class="competence_text">Angular</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="empty_dot"></span>
+          <span class="empty_dot"></span>
+        </div>
 
-            <div class="competence">
-                <span class="competence_text">Java</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="half_dot"></span>
-            </div>
+        <div class="competence">
+          <span class="competence_text">Java</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="half_dot"></span>
+        </div>
 
-            <div class="competence">
-                <span class="competence_text">Python</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="half_dot"></span>
-                <span class="empty_dot"></span>
-            </div>
+        <div class="competence">
+          <span class="competence_text">Python</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="half_dot"></span>
+          <span class="empty_dot"></span>
+        </div>
 
-            <div class="competence">
-                <span class="competence_text">JS</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="empty_dot"></span>
-                <span class="empty_dot"></span>
-            </div>
+        <div class="competence">
+          <span class="competence_text">JS</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="empty_dot"></span>
+          <span class="empty_dot"></span>
+        </div>
 
-            <div class="competence">
-                <span class="competence_text">Flutter</span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="half_dot"></span>
-                    <span class="empty_dot"></span>
-                    <span class="empty_dot"></span>
-            </div>
+        <div class="competence">
+          <span class="competence_text">Flutter</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="half_dot"></span>
+          <span class="empty_dot"></span>
+          <span class="empty_dot"></span>
+        </div>
 
-            <div class="competence">
-                <span class="competence_text">Android</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="empty_dot"></span>
-                <span class="empty_dot"></span>
-            </div>
+        <div class="competence">
+          <span class="competence_text">Android</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="empty_dot"></span>
+          <span class="empty_dot"></span>
+        </div>
 
-            <div class="competence">
-                <span class="competence_text">Kotlin</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="empty_dot"></span>
-            </div>
+        <div class="competence">
+          <span class="competence_text">Kotlin</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="empty_dot"></span>
+        </div>
 
-            <div class="competence">
-                <span class="competence_text">PHP</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="empty_dot"></span>
-                <span class="empty_dot"></span>
-            </div>
-
-
-            
+        <div class="competence">
+          <span class="competence_text">PHP</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="empty_dot"></span>
+          <span class="empty_dot"></span>
+        </div>
+      </div>
     </div>
-</div>
-<div id="exppro">
-
-</div>
-<div id="projets">
-
-</div>
-<script src="./js/index.js"></script>
-</body>
+    <div id="projets">
+      <div id="container_projets">
+          <div class="project_card">
+              <h3>Sopra Steria Group Playground</h3>
+              <p>Lors de ma <var>1 <sup>ère</sup></var> année de Master, j'ai été amené à effectuer un Travail d'Études et de Recherche. Pendant ce TER, j'ai eu la chance de collaborer avec l'entreprise Sopra Steria afin de créer une plateforme de Gestion d'évènements en ligne.</p>
+              <p>Ce projet a pour but de développer un outil collaboratif permettant : 
+                  <ul>
+                     <li>&emsp; - de planifier et organiser des activités ludiques et divertissantes</li>
+                     <li>&emsp; - d’animer des évènements à vocation interne ou externe, en local ou à distance</li>
+                     <li>&emsp; - de centraliser et cataloguer des activités (existantes ou à développer)</li>
+                     <li>&emsp; - de moderniser et industrialiser les évènements</li>
+                     <li>&emsp; - d’optimiser les échanges effectués pendant l’évènement</li>
+                  </ul>
+                    
+              </p>
+          </div>
+          <div class="project_card">
+            <h3>Mon Projet</h3>
+        </div>
+        <div class="project_card">
+            <h3>Mon Projet</h3>
+        </div>
+        <div class="project_card">
+            <h3>Mon Projet</h3>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

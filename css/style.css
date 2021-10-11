@@ -1,284 +1,326 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: white;
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #110f0f;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 0 5% 0 5%;
-    background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0 5% 0 5%;
+  background-color: black;
 }
 
 #navlist {
-    height: 10vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 3%;
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3%;
 }
 
 #navlist li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-.navlinks{
-    font-size: 1.5rem;
+.navlinks {
+  font-size: 1.5rem;
 }
 
 .navlinks:hover {
-    transition: font-size 0.2s ease;
-    text-decoration: underline;
-    font-size: 1.6em;
-    font-weight: bold;
+  transition: font-size 0.2s ease;
+  text-decoration: underline;
+  font-size: 1.6em;
+  font-weight: bold;
 }
 
-.navlinks::after{
-    text-decoration: underline;
-    font-weight: bold;
+.navlinks::after {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .toggle {
-    display: none;
+  display: none;
+}
+.hamburger_title_div {
+  flex-basis: 50%;
 }
 
 .title {
-    height: 100%;
-    width: 100%;
-    font-size: 2.5rem;
-    font-weight: bolder;
+  height: 100%;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: bolder;
 }
 
 #presentation {
-    height: 100vh;
-    width: 100%;
-    padding-top: 10vh;
-    background-color: #110F0F;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  height: 100vh;
+  width: 100%;
+  padding-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-
-.under_text{
-    margin-top: 2%;
+.under_text {
+  margin-top: 2%;
 }
 
-#presentation_img{
-    width: 35%;
+#presentation_img {
+  width: 35%;
 }
 
-#pres_text_div{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#pres_text_div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#pres_text_div p{
-    font-size: 1.3rem;
+#pres_text_div p {
+  font-size: 1.3rem;
 }
 
-#text_pres_cursus{
-    font-weight: bolder;
+#text_pres_cursus {
+  font-weight: bolder;
 }
 
-#cv_redirect_link{
-    margin-top: 1.5rem;
-    border: 1px solid white;
-    padding: 1rem;
-    background-color: white;
-    color: #110F0F;
-    font-weight: bold;
-    border-radius: 50px;
+#cv_redirect_link {
+  margin-top: 1.5rem;
+  border: 1px solid white;
+  padding: 1rem;
+  background-color: white;
+  color: #110f0f;
+  font-weight: bold;
+  border-radius: 50px;
 }
-#redirect_text{
-    width: 100%;
-    text-align: center;
+#redirect_text {
+  width: 100%;
+  text-align: center;
 }
 
-#ddl_text{
-    text-decoration: underline;
-    color: #438EFF;
+#ddl_text {
+  text-decoration: underline;
+  color: #438eff;
 }
 
 #competences {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  width: 90%;
+  min-height: 80vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.competence {
+  flex-basis: 50%;
+}
+
+.competence_text {
+  display: inline-block;
+  width: 40%;
+  font-size: 2rem;
+  margin: 0 3rem;
+}
+
+.dot {
+  background-color: #576bb1;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.empty_dot {
+  background-color: white;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.half_dot {
+  background: linear-gradient(90deg, #576bb1 50%, white 50%);
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+#projets {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container_projets{
+    width: 95%;
     min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.project_card{
+    width: 40%;
+    min-height: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 2%;
+}
+
+.project_card h3{
+    text-align: center;
+}
+
+.project_card p{
+    text-align: justify;
+}
+
+.project_card li{
+    list-style: none;
+}
+
+
+
+@media (max-width: 1410px) {
+  .competence_text {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .visiblemenu_active {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
-#competences_glass{
-    width: 90%;
-    min-height: 80vh;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    padding: 2%;
+  .visiblemenu_hidden {
+    visibility: hidden;
+  }
+
+  .navlinks {
+    font-size: 1.5rem;
+  }
+
+  .toggle button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  #navlist {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .hamburger_title_div {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  #pres_text_ddl {
+    display: block;
+    margin-top: 1.5rem;
+  }
+
+  .glass {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .competence_text {
+    width: 30%;
+    margin: 0 1rem;
+  }
+
+  .competence {
+    width: 55%;
+  }
+
+  .dot,
+  .empty_dot,
+  .half_dot {
+    width: 2rem;
+    height: 2rem;
+  }
+  #container_projets{
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .project_card{
+      width: 80%;
+      padding: 5%;
+  }
 }
 
-.competence{
-    flex-basis: 50%;
-}
+@media (max-width: 800px) {
+  #pres_text_div {
+    width: 80%;
+  }
 
-.competence_text{
-    display: inline-block;
-    width: 40%;
-    font-size: 2rem;
-    margin: 0 3rem;
-}
+  #presentation {
+    flex-direction: column-reverse;
+  }
 
-.dot{
-    background-color: #576BB1;
-    display: inline-block;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-}
+  .dot,
+  .empty_dot,
+  .half_dot {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
-.empty_dot{
-    background-color: white;
-    display: inline-block;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-}
-
-.half_dot{
-    background: linear-gradient(90deg,#576BB1 50%,white 50%);
-    display: inline-block;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-}
-
-#projets {
-    height: 90vh;
-}
-
-#exppro{
-    height: 90vh;
-}
-
-@media (max-width:1410px){
-   
-    .competence_text{
-        width: 20%;
-    }
-}
-
-@media (max-width: 1100px) {
-    .visiblemenu_active{
-        width: 100%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        border-bottom:1px solid white ;
-        border-right: 1px solid white;
-        border-left: 1px solid white;
-        background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .visiblemenu_hidden{
-        visibility:hidden;
-    }
-
-    .navlinks{
-        font-size: 1.5rem;
-    }
-
-    .toggle button{
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0;
-        font: inherit;
-        cursor: pointer;
-        outline: inherit;
-    }
-
-    #navlist{
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .hamburger_title_div{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .title{
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .toggle{
-        display: block;
-    }
-
-    #pres_text_ddl{
-        display: block;
-        margin-top: 1.5rem;
-    }
-
-    #competences_glass{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .competence_text{
-        width: 30%;
-        margin: 0 1rem;
-    }
-
-    .competence{
-        width: 55%;
-    }
-
-    .dot,.empty_dot,.half_dot{
-        width: 2rem;
-        height: 2rem;
-    }
-
-}
-
-@media (max-width:800px){
-    #pres_text_div{
-        width: 80%;
-    }
-
-    #presentation{
-        flex-direction: column-reverse;
-    }
-
-    .dot,.empty_dot,.half_dot{
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
-    .competence_text{
-        font-size: 1.5rem;
-    }
+  .competence_text {
+    font-size: 1.5rem;
+  }
 }
