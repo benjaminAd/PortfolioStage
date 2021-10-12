@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/png" href="./medias/28emote1.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mon CV</title>
   </head>
   <body>
@@ -16,10 +17,14 @@
           <li class="toggle"><button>@</button></li>
         </div>
         <li class="visiblemenu visiblemenu_hidden">
-          <a class="navlinks" data-link="presentation" href="#presentation">Présentation</a>
+          <a class="navlinks" data-link="presentation" href="#presentation"
+            >Présentation</a
+          >
         </li>
         <li class="visiblemenu visiblemenu_hidden">
-          <a class="navlinks" data-link="competences" href="#competences">Compétences</a>
+          <a class="navlinks" data-link="competences" href="#competences"
+            >Compétences</a
+          >
         </li>
         <li class="visiblemenu visiblemenu_hidden">
           <a class="navlinks" data-link="projets" href="#projets">Projets</a>
@@ -49,7 +54,7 @@
           <span id="pres_text_ddl"
             >ou téléchargez le
             <a
-              href="https://www.dropbox.com/s/8wsiyscjjqatn3v/Benjamin_Adolphe_Resume.pdf?dl=1"
+              href="https://www.dropbox.com/s/nh4msp9h7t3apm6/Benjamin_ADOLPHE.pdf?dl=1"
               target="_blank"
               download="Benjamin_Adolphe_resume.pdf"
               id="ddl_text"
@@ -142,7 +147,11 @@
       <div id="container_projets">
         <div class="cardItems">
           <div class="project_card">
-            <img src="./medias/friends_holding_trophy.svg" alt="SSGP_icon" />
+            <img
+              class="ssgp"
+              src="./medias/friends_holding_trophy.svg"
+              alt="SSGP_icon"
+            />
             <div class="card_text">
               <h3>Sopra Steria Group Playground</h3>
               <p>
@@ -160,148 +169,80 @@
 
         <div class="cardItems">
           <div class="project_card">
-            <img src="./medias/friends_holding_trophy.svg" alt="SSGP_icon" />
+            <img
+              class="vitreen"
+              src="./medias/Vitreen_Logo.svg"
+              alt="Vitreen_icon"
+            />
             <div class="card_text">
               <h3>Projet M1 - Vitreen</h3>
               <p>
-                Vitreen est une application de vente en ligne développé en collaboration avec <a href="https://www.1visible.fr">Nicolas Lauret</a> dans le cadre de notre projet de Développement Mobile pour Android.
+                Vitreen est une application de vente en ligne développé en
+                collaboration avec
+                <a href="https://www.1visible.fr">Nicolas Lauret</a> dans le
+                cadre de notre projet de Développement Mobile pour Android.
               </p>
+              <div class="div_link_to_project">
+                <a
+                  class="link_to_project"
+                  href="https://github.com/1visible/Vitreen"
+                  target="_blank"
+                  >Consulter le projet</a
+                >
+              </div>
             </div>
           </div>
         </div>
 
         <div class="cardItems">
           <div class="project_card">
-            <img src="./medias/friends_holding_trophy.svg" alt="SSGP_icon" />
+            <img src="./medias/flutter_logo.svg" alt="Flutter_icon" class="flutter"/>
             <div class="card_text">
-              <h3>Sopra Steria Group Playground</h3>
+              <h3>Météo App</h3>
               <p>
-                Lors de ma <var>1<sup>ère</sup></var> année de Master, j'ai été
-                amené à effectuer un Travail d'Études et de Recherche en équipe
-                avec <a href="https://www.1visible.fr">Nicolas Lauret</a> et
-                <a href="https://www.daemoryn.com">Alexandre Canton Condes</a>.
-                Pendant ce TER, j'ai eu la chance de collaborer avec
-                l'entreprise Sopra Steria afin de créer une plateforme de
-                Gestion d'évènements en ligne.
+                Application météo cross-plateforme programmée en Flutter / Dart
+                lors d'un exercice de travaux Dirigés en développement mobile
+                avancé.
               </p>
+              <div class="div_link_to_project">
+                <a
+                  href="https://github.com/benjaminAd/Meteo-App-Flutter"
+                  target="_blank"
+                  class="link_to_project"
+                  >Consulter le projet</a
+                >
+              </div>
             </div>
           </div>
         </div>
 
         <div class="cardItems">
           <div class="project_card">
-            <img src="./medias/friends_holding_trophy.svg" alt="SSGP_icon" />
+            <img
+              class="ssgp"
+              src="./medias/connectanoulogo.svg"
+              alt="Connectanou_icon"
+            />
             <div class="card_text">
-              <h3>Sopra Steria Group Playground</h3>
+              <h3>Connectanou</h3>
               <p>
-                Lors de ma <var>1<sup>ère</sup></var> année de Master, j'ai été
-                amené à effectuer un Travail d'Études et de Recherche en équipe
-                avec <a href="https://www.1visible.fr">Nicolas Lauret</a> et
-                <a href="https://www.daemoryn.com">Alexandre Canton Condes</a>.
-                Pendant ce TER, j'ai eu la chance de collaborer avec
-                l'entreprise Sopra Steria afin de créer une plateforme de
-                Gestion d'évènements en ligne.
+                Développement d'une plateforme visant à aider les PME et les
+                étudiants en informatique. Une PME dépose son projet sur la
+                plateforme puis un groupe d'étudiant réalise ce projet à moindre
+                coût. Le but de cette plateforme est de permettre aux étudiants
+                d'informatique d'acquérie de l'expérience professionnel.
               </p>
             </div>
           </div>
         </div>
-       
-       <!-- <div class="cardItems">
-          <div class="project_card card_margin_b">
-            <img src="./medias/friends_holding_trophy.svg" alt="SSGP_icon" />
-            <div class="card_text">
-              <h3>Sopra Steria Group Playground</h3>
-              <p>
-                Lors de ma <var>1<sup>ère</sup></var> année de Master, j'ai été
-                amené à effectuer un Travail d'Études et de Recherche en équipe
-                avec <a href="https://www.1visible.fr">Nicolas Lauret</a> et
-                <a href="https://www.daemoryn.com">Alexandre Canton Condes</a>.
-                Pendant ce TER, j'ai eu la chance de collaborer avec
-                l'entreprise Sopra Steria afin de créer une plateforme de
-                Gestion d'évènements en ligne.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="cardItems">
-          <div class="project_card card_margin_b">
-            <img src="./medias/friends_holding_trophy.svg" alt="SSGP_icon" />
-            <div class="card_text">
-              <h3>Sopra Steria Group Playground</h3>
-              <p>
-                Lors de ma <var>1<sup>ère</sup></var> année de Master, j'ai été
-                amené à effectuer un Travail d'Études et de Recherche en équipe
-                avec <a href="https://www.1visible.fr">Nicolas Lauret</a> et
-                <a href="https://www.daemoryn.com">Alexandre Canton Condes</a>.
-                Pendant ce TER, j'ai eu la chance de collaborer avec
-                l'entreprise Sopra Steria afin de créer une plateforme de
-                Gestion d'évènements en ligne.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="cardItems">
-          <div class="project_card card_margin_b">
-            <img src="./medias/friends_holding_trophy.svg" alt="SSGP_icon" />
-            <div class="card_text">
-              <h3>Sopra Steria Group Playground</h3>
-              <p>
-                Lors de ma <var>1<sup>ère</sup></var> année de Master, j'ai été
-                amené à effectuer un Travail d'Études et de Recherche en équipe
-                avec <a href="https://www.1visible.fr">Nicolas Lauret</a> et
-                <a href="https://www.daemoryn.com">Alexandre Canton Condes</a>.
-                Pendant ce TER, j'ai eu la chance de collaborer avec
-                l'entreprise Sopra Steria afin de créer une plateforme de
-                Gestion d'évènements en ligne.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="cardItems">
-          <div class="project_card card_margin_b">
-            <img src="./medias/friends_holding_trophy.svg" alt="SSGP_icon" />
-            <div class="card_text">
-              <h3>Sopra Steria Group Playground</h3>
-              <p>
-                Lors de ma <var>1<sup>ère</sup></var> année de Master, j'ai été
-                amené à effectuer un Travail d'Études et de Recherche en équipe
-                avec <a href="https://www.1visible.fr">Nicolas Lauret</a> et
-                <a href="https://www.daemoryn.com">Alexandre Canton Condes</a>.
-                Pendant ce TER, j'ai eu la chance de collaborer avec
-                l'entreprise Sopra Steria afin de créer une plateforme de
-                Gestion d'évènements en ligne.
-              </p>
-            </div>
-          </div>
-        </div>-->
-       <!-- <div class="project_card card_margin_b">
-          <h3>Vitreen</h3>
-          <p>
-            Lors d'un projet de développement mobile, j'ai eu l'occasion de
-            développer une application Android avec
-            <a href="https://www.1visible.fr">Nicolas Lauret</a>.
-          </p>
-          <p>
-            Notre application s’inscrit donc dans un processus éco-responsable
-            de lutte contre le gaspillage en permettant à des particuliers ou
-            des entreprises de poster des annonces sur notreplateforme et de
-            nous livrer leurs produits que nous pouvons accueillir dans divers
-            entrepôts en France. Ainsi, les acheteurs peuvent profiter
-            d’articles à prix réduit tandis que les vendeurs peuvent faire de la
-            place dans leurs locaux tout en évitant les coûts de destruction de
-            leurs produits ainsi que la gestion des livraisons, assurée par nos
-            services.
-          </p>
-          <p>
-            En quête de challenge et d’apprentissage, et souhaitant intégrer le
-            monde du développement de logiciels web et mobile à la fin de notre
-            cursus scolaire, nous avons profité de cette opportunité afin
-            d’apprendre de nouvelles technologies dont la côte de popularité
-            croit depuis quelques années : Kotlin et Firebase
-          </p>
-        </div>-->
       </div>
     </div>
+    <footer>© 2021 Copyrights - Benjamin ADOLPHE
+    <div class="social_link">
+      <a href="https://github.com/benjaminAd" target="_blank"><img id="githubimg" src="./medias/GitHub-Mark-Light-120px-plus.png" alt="github"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/adolphe-benjamin-183322172" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 3rem;"></i></a>
+    </div>  
+    </footer>
     <script src="./js/index.js"></script>
   </body>
 </html>
