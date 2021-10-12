@@ -4,9 +4,6 @@ const toggle = document.querySelector(".toggle");
 var flag = false;
 links.forEach((item) => {
     item.addEventListener('click', (e) => {
-        e.preventDefault();
-        let el = document.getElementById(item.getAttribute("data-link"));
-        el.scrollIntoView(false);
         if(flag){
             flag = !flag;
             addClass(flag);
