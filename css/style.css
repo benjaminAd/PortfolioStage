@@ -122,6 +122,17 @@ nav {
   justify-content: center;
 }
 
+#contact_button{
+  margin-top:3rem;
+  border: 1px solid white;
+  padding: 1rem;
+  background-color: white;
+  color: #110f0f;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 50px;
+}
+
 .glass {
   width: 90%;
   min-height: 80vh;
